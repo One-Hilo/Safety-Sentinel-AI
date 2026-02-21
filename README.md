@@ -7,7 +7,7 @@ Este repositorio es la base para integrar el detector con tu plataforma/app (**a
 
 ---
 
-## ✅ Qué hace
+## ✅ Qué have
 
 - Detecta **personas** y clasifica **uso de casco** (Helmet / No-Helmet)
 - Procesa:
@@ -42,9 +42,11 @@ Este repositorio es la base para integrar el detector con tu plataforma/app (**a
 ## 🚀 Instalación (entorno virtual)
 
 ### 1) Clona el repo
+
 ```bash
 git clone https://github.com/One-Hilo/Safety-Sentinel-AI.git
 cd Safety-Sentinel-AI
+```
 ````
 
 ### 2) Crea y activa entorno
@@ -82,11 +84,10 @@ pip install -r requirements.txt
 
 Puedes usar YOLO preentrenado y luego afinar con tu dataset:
 
-* Para empezar rápido: `yolov8n.pt` / `yolov8s.pt`
-* Para producción: entrenar un modelo con clases:
-
-  * `helmet`
-  * `no_helmet`
+- Para empezar rápido: `yolov8n.pt` / `yolov8s.pt`
+- Para producción: entrenar un modelo con clases:
+  - `helmet`
+  - `no_helmet`
 
 ---
 
@@ -147,15 +148,14 @@ yolo export model=TU_MODELO.pt format=onnx
 
 Este repositorio está pensado para que puedas conectarlo con tu app:
 
-* **amadorcristaleria.onehilo.com**
-* Dashboard y alertas
-* API para registrar detecciones:
-
-  * timestamp
-  * cámara / ubicación
-  * bbox
-  * clase (helmet/no_helmet)
-  * confianza
+- **amadorcristaleria.onehilo.com**
+- Dashboard y alertas
+- API para registrar detecciones:
+  - timestamp
+  - cámara / ubicación
+  - bbox
+  - clase (helmet/no_helmet)
+  - confianza
 
 > Si quieres, puedo prepararte una carpeta `/api` con un servidor FastAPI para recibir frames o URLs y devolver detecciones en JSON.
 
@@ -163,12 +163,12 @@ Este repositorio está pensado para que puedas conectarlo con tu app:
 
 ## 🛠️ Roadmap
 
-* [ ] Entrenamiento con dataset propio (helmet / no_helmet)
-* [ ] Modo “evento” (solo guardar cuando hay *no_helmet*)
-* [ ] Guardado de evidencias (imagen/clip + bbox)
-* [ ] API REST (FastAPI) para integración
-* [ ] Docker para despliegue
-* [ ] Soporte multi-cámara
+- [ ] Entrenamiento con dataset propio (helmet / no_helmet)
+- [ ] Modo “evento” (solo guardar cuando hay _no_helmet_)
+- [ ] Guardado de evidencias (imagen/clip + bbox)
+- [ ] API REST (FastAPI) para integración
+- [ ] Docker para despliegue
+- [ ] Soporte multi-cámara
 
 ---
 
@@ -181,4 +181,4 @@ Revisa `LICENSE` y las licencias de los modelos/datasets que uses antes de despl
 
 ## 📩 Contacto
 
-**One-Hilo
+\*\*One-Hilo
